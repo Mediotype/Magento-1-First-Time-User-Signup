@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @author      Mediotype
+ */
+ -->
+<config>
+    <modules>
+        <Mediotype_FirstVisitSignup>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Newsletter/>
+            </depends>
+        </Mediotype_FirstVisitSignup>
+    </modules>
+</config>

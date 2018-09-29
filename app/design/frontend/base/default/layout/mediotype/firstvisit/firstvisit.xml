@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem" ifconfig="mediotype_firstvisit/firstvisit/active">
+                <type>skin_js</type>
+                <name>mediotype/firstvisit/customPrompt.js</name>
+            </action>
+            <action method="addCss" ifconfig="mediotype_firstvisit/firstvisit/active">
+                <stylesheet>mediotype/firstvisit/customPrompt.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="after_body_start">
+            <block type="mediotype_firstvisit/newsletter" name="first_visit_newsletter_form"
+                   as="first_visit_newsletter_form" template="mediotype/firstvisit/newsletter.phtml"/>
+        </reference>
+    </default>
+</layout>

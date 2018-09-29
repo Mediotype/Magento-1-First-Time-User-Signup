@@ -1,0 +1,120 @@
+/**
+ * @author Mediotype
+ * custom prompt css
+ **/
+
+.close-x {
+    background-image: url(CloseX.png);
+    float:right;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+    left: 25px;
+    bottom: 25px;
+}
+
+#firstVisitPrompt {
+
+}
+
+#firstVisitPrompt .form-list .input-box {
+    float: left !important;
+}
+
+#firstVisitPrompt .form-list li::after {
+    clear: none !important;
+}
+
+#firstVisitPrompt .form-list li {
+    margin: 0 !important;
+}
+
+#firstVisitPrompt .form-list .input-box input {
+    line-height: 2.2;
+    width: 250px;
+}
+
+.firstvisit-inner-wrapper{
+    width: 91%;
+    margin: 0 auto;
+}
+
+#firstVisitPrompt .buttons-set .button span {
+    padding: 0px 55px 0px 10px;
+    width: 20px;
+    margin-right: 23px;
+}
+#firstVisitPrompt .buttons-set .button span span {font-size: 10px;}
+
+
+#firstVisitPrompt .buttons-set {
+    clear:none;
+    float:right;
+    margin: 0 !important;
+}
+
+.prompt {
+    display:none;
+    padding: 35px;
+    position: fixed;
+    z-index: 116;
+    background:white;
+    top:0;
+    left:0
+}
+
+.prompt.active {
+    display:block
+}
+
+.prompt img {
+    height:auto;
+    width:100%
+}
+
+.prompt .btn-close {
+    cursor:pointer
+}
+
+#firstVisitPrompt .btn-close {
+    padding-right: 10px;
+}
+
+#firstVisitPrompt .popup-bottom-msg {
+    clear:both;
+    padding-top:10px;
+}
+
+#successPrompt .btn-close {
+    padding-right: 10px;
+}
+
+.overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:.45;
+    z-index:115
+}
+
+@media only screen and (max-width: 700px) {
+    .prompt input[type="email"],
+    .prompt input[type="search"],
+    .prompt input[type="number"],
+    .prompt input[type="password"],
+    .prompt input[type="tel"],
+    .prompt input[type="text"] {
+        width: auto
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .prompt {
+        top:30%;
+        left:30%
+    }
+}

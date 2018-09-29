@@ -1,0 +1,6 @@
+app/code/community/Mediotype/FirstVisitSignup/ app/code/community/Mediotype/FirstVisitSignup/
+app/etc/modules/Mediotype_FirstVisitSignup.xml app/etc/modules/Mediotype_FirstVisitSignup.xml
+app/design/frontend/base/default/template/mediotype/firstvisit/ app/design/frontend/base/default/template/mediotype/firstvisit/
+app/design/frontend/base/default/layout/mediotype/firstvisit/firstvisit.xml app/design/frontend/base/default/layout/mediotype/firstvisit/firstvisit.xml
+skin/frontend/base/default/mediotype/firstvisit skin/frontend/base/default/mediotype/firstvisit
+FirstVisitSignup.xml /var/connect/FirstVisitSignup.xml

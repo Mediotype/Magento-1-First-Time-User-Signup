@@ -1,0 +1,32 @@
+<?php
+/**
+ * @var $this Mediotype_FirstVisitSignup_Block_Newsletter
+ */
+$helper = $this->helper('mediotype_firstvisit');
+?>
+<script type="text/javascript">
+    document.body.onload = function () {
+        customPrompt('firstVisitPrompt');
+    };
+</script>
+<div id="firstVisitPrompt" class="prompt">
+    <div>
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($helper->getCmsBlockIdentifier())->toHtml() ?>
+    </div>
+    <form action="<?php echo $this->getFormUrl() ?>" method="post">
+        <ul class="form-list">
+            <li>
+                <div class="input-box">
+                    <input id="email" type="email" name="email" value=""
+                           placeholder="<?php echo $helper->getEmailPlaceholder() ?>"/>
+                </div>
+            </li>
+        </ul>
+        <div class="buttons-set">
+            <button class="button" type="submit"><span><span><?php echo $helper->getSignUpButton() ?></span></span>
+            </button>
+            <a class="btn-close button"
+               onclick="closeClick('firstVisitPrompt')"><span><span><?php echo $helper->getNoThanksButton() ?></span></span></a>
+        </div>
+    </form>
+</div>

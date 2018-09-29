@@ -1,0 +1,104 @@
+<_>
+   <form_key>nq4gPLSrIYKSZG3a</form_key>
+   <name>FirstVisitSignup</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>Sign up first time visitors!</summary>
+   <description>Pop Up Marketing has two distinct camps taking two very different sides. On one side we have those that believe pop-up ads of any sort are a nuisance on websites and decrease the overall user experience. On the other side we have those that believe Pop-up Windows have their purpose and place. At Mediotype, we believe there are certain rules that should be followed when using Pop-Up Windows, and when those rules are followed, Pop-Up Window functionality can actually provide a quality experience for users. </description>
+   <license>custom</license>
+   <license_uri>http://www.mediotype.com/LICENSE.txt</license_uri>
+   <version>0.1.1</version>
+   <stability>stable</stability>
+   <notes>Feature Highlights
+	• Easily edit text shown on buttons and inside the email form through the Magento Admin
+	• Create and choose a CMS Block using Magento&apos;s powerful WYSIWYG editor to show any kind of content in the popup
+	• Fully integrated with Magento&apos;s Newsletter subscription system  to compliment your email campaigns
+Remembers visitors so it only shows once</notes>
+   <authors>
+      <name>
+         <name>Mediotype</name>
+      </name>
+      <user>
+         <user>mprototype</user>
+      </user>
+      <email>
+         <email>joel@mediotype.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.0.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>        </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageetc</target>
+         <target>mageskin</target>
+      </target>
+      <path>
+         <path/>
+         <path>Mediotype/FirstVisitSignup</path>
+         <path>frontend/base/default/layout/mediotype/firstvisit/firstvisit.xml</path>
+         <path>frontend/base/default/template/mediotype/firstvisit</path>
+         <path>./modules/Mediotype_FirstVisitSignup.xml</path>
+         <path>frontend/base/default/mediotype/firstvisit</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

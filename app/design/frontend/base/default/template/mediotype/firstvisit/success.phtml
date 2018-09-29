@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var $this Mediotype_FirstVisitSignup_Block_Newsletter
+ */
+$helper = $this->helper('mediotype_firstvisit');
+?>
+<script type="text/javascript">
+    document.body.onload = function () {
+        customPrompt('successPrompt');
+    };
+</script>
+<div id="successPrompt" class="prompt">
+    <img src="<?php echo $helper->getLogoSrcSmall() ?>" alt="<?php echo $helper->getLogoAlt() ?>"/>
+
+    <p class="block-title"><?php echo $this->__('Thank you for signing up!') ?> </p>
+
+    <div class="buttons-set">
+        <a class="btn-close button"
+           onclick="closeClick('successPrompt')"><span><span><?php echo $this->__('Close') ?></span></span></a>
+    </div>
+</div>

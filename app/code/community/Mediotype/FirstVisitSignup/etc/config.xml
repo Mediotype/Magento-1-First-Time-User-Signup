@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * @author      Mediotype
+ */
+ -->
+<config>
+    <modules>
+        <Mediotype_FirstVisitSignup>
+            <version>0.1.0</version>
+        </Mediotype_FirstVisitSignup>
+    </modules>
+    <global>
+        <blocks>
+            <mediotype_firstvisit>
+                <class>Mediotype_FirstVisitSignup_Block</class>
+            </mediotype_firstvisit>
+        </blocks>
+        <resources>
+            <mediotype_firstvisit_setup>
+                <setup>
+                    <module>Mediotype_FirstVisitSignup</module>
+                </setup>
+            </mediotype_firstvisit_setup>
+        </resources>
+        <helpers>
+            <mediotype_firstvisit>
+                <class>Mediotype_FirstVisitSignup_Helper</class>
+            </mediotype_firstvisit>
+        </helpers>
+        <models>
+            <mediotype_firstvisit>
+                <class>Mediotype_FirstVisitSignup_Model</class>
+            </mediotype_firstvisit>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <mediotype_firstvisit>
+                <use>standard</use>
+                <args>
+                    <module>Mediotype_FirstVisitSignup</module>
+                    <frontName>first-visit-signup</frontName>
+                </args>
+            </mediotype_firstvisit>
+        </routers>
+        <layout>
+            <updates>
+                <mediotype_firstvisit>
+                    <file>mediotype/firstvisit/firstvisit.xml</file>
+                </mediotype_firstvisit>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <mediotype_firstvisit>
+            <firstvisit>
+                <active>1</active>
+                <block>firstvisit_default</block>
+                <email_placeholder>Email</email_placeholder>
+                <sign_up_button>Sign Up</sign_up_button>
+                <no_thanks_button>No Thanks</no_thanks_button>
+            </firstvisit>
+        </mediotype_firstvisit>
+    </default>
+</config>
